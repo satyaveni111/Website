@@ -1,0 +1,42 @@
+/* styles.css */
+
+body {
+    background-color: #131842; /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #E68369;
+}
+
+.d-flex {
+    width: 300px;
+    text-align: center;
+}
+
+button {
+    background-color:transparent;
+    color:#E68369;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid #E68369;
+    border-radius: 50px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+button:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    color:white;
+    background-color: #E68369;
+}
+
+button:active {
+    transform: translateY(0); /* Return to normal on click */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Smaller shadow on click */
+}

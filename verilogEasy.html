@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechQuest Quiz</title>
+    <link rel="stylesheet" href="veasyquiz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body class = "bg-color">
+    <h1 class = "mb-0"><span style  = "color: #131842;">TECH </span> <span style = "color:#E68369;">QUEST</span></h1>
+
+    <div class="d-flex flex-row justify-content-between p-5"> 
+        <div class="sub d-flex flex-column align-items-center mr-3">
+            <h2 class="m-0 mr-2" id = "sub">Subject Name</h2>
+            <p id  = "verilog">Verilog</p>
+        </div>
+        <div  class="timer d-flex flex-column align-items-center mr-3"> 
+            <h2 id="timer">Time left:</h2>
+            <p id="time">10:00</p>
+        </div>
+        <div class="difficulty-level d-flex flex-column align-items-center" >
+            <h2 class="m-0 mr-2" id = "diffcultyLevel">Difficulty Level</h2>
+            <p id  = "easy">Easy</p>
+        </div>
+        <button id="endAssessmentBtn" onclick="endAssessment()">End Test</button>
+    </div>
+    <div id="question-container" class="question-container">
+        <p id="question">Question will appear here</p>
+        <form id="quiz-form">
+            <div class="option">
+                <input type="radio" name="answer" value="A" id="optionA">
+                <label for="optionA" id="labelA">Option A</label>
+            </div>
+            <div class="option">
+                <input type="radio" name="answer" value="B" id="optionB">
+                <label for="optionB" id="labelB">Option B</label>
+            </div>
+            <div class="option">
+                <input type="radio" name="answer" value="C" id="optionC">
+                <label for="optionC" id="labelC">Option C</label>
+            </div>
+            <div class="option">
+                <input type="radio" name="answer" value="D" id="optionD">
+                <label for="optionD" id="labelD">Option D</label>
+            </div>
+        </form>
+        <div class = "d-flex flex-row justify-content-end">
+            <button id="submit" onclick="checkAnswer()">Next Question</button>
+        </div>
+        <p id="feedback"></p>
+    </div>
+    
+    <!-- Hidden scorecard that will appear after ending assessment -->
+    <div id="scoreCard" style="display: none; border: 1px solid; padding: 20px; margin-top: 20px;">
+        <h2>Score Card</h2>
+        <p id="correctAnswerScore"></p>
+        <p id="wrongAnswerScore"></p>
+        <p>Assessment Complete.</p>
+    </div>
+    <script src="quiz.js"></script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+body {
+    background-color: #131842; /* Dark background */
+    color: #E68369; /* Text color */
+    font-family: 'Arial', sans-serif; /* Font family */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    justify-content: flex-start; /* Start content from top */
+    text-align: center; /* Center align text */
+    padding-top: 20px; /* Space above the content */
+}
+.bgcolor{
+    background-color:#131842;
+}
+h1 {
+    font-size: 2.5rem; /* Larger font size for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.d-flex {
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children */
+    width: 300px; /* Fixed width for dropdown container */
+}
+
+select.styled-select {
+    background-color: transparent; /* Background color for dropdown */
+    color:#E68369;
+
+    font-weight: 600;
+    border: 2px solid #E68369;
+    padding: 20px;
+    border-radius: 20px;
+    appearance: none;
+    width: 100%; /* Full width for each select */
+}
+
+select.styled-select option {
+    background-color: #131842; /* Background color for dropdown options */
+    color:white;
+}
+
+.styled-select:hover {
+    margin:0px;
+    color:white;
+    background-color: #d8765b; /* Darker shade on hover */
+}
+
+option{
+    color:#E68369;
+    font-family: sans-serif;
+}

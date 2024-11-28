@@ -1,0 +1,177 @@
+/* Overall body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #131842;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bg-color{
+    background-color:white;
+}
+/* Main flexbox container */
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+h1{
+    font-family:"Roboto";
+    font-weight: bold;
+}
+/* Subject Name, Timer, and Difficulty Level styling */
+h2 {
+    color: #131842;
+    font-size: 1.8rem; /* Reduced font size */
+    margin-bottom: 0.5rem;
+    font-family:"Roboto";
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.timer {
+    font-size:30px; /* Reduced font size for timer */
+    font-weight: bold;
+    color:#131842;
+    text-align:center;
+    width:100%;
+    padding: 0px 0px; /* Adjusted padding for height */
+    border-radius: 8px;
+}
+
+/* Styling for the Subject Name andS Difficulty Level blocks */
+.sub, .difficulty-level {
+    padding: 10px; /* Adjusted padding */
+    color:#131842;
+    font-weight:bold;
+    border-radius: 8px;
+    width: 100%; /* Adjusted width */
+    text-align: center;
+    height: 100px; /* Added height for uniformity */
+    display: flex; /* Flex display for centering */
+    flex-direction: column; /* Column direction for items */
+    justify-content: center; /* Centering items vertically */
+}
+
+/* Question container styling */
+.question-container {
+        background-color: white;
+        border: 2px solid #131842;
+        border-radius: 10px;
+        padding: 10px;
+        width: 60%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex; /* Use flexbox for alignment */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+#question {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #131842;
+    margin-bottom: 20px;
+}
+
+/* Option labels styling */
+label {
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #131842;
+        width: 100%; /* Ensure full width to center within its parent */
+    }
+
+input[type="radio"] {
+        margin-right: 10px; /* Space between radio button and label */
+        margin-left: 0; /* Remove any left margin if necessary */
+        align-self: center; /* Center the radio button within the label */
+    }    
+
+/* Submit button styling */
+#submit {
+    background-color:transparent;
+    color: #131842;
+    font-size: 1.2rem;
+    border:2px solid #131842;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #131842; /* Darker shade on hover */
+    color:aliceblue;
+}
+
+/* Feedback message styling */
+#feedback {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #131842;
+    font-weight: bold;
+}
+.option {
+    display: flex; /* Use flexbox to align radio buttons and labels */
+    align-items: center; /* Center vertically */
+    margin-bottom: 10px; /* Add some space between options */
+}
+
+input[type="radio"] {
+    margin-right: 10px; /* Space between radio button and label */
+}
+
+
+/* End Assessment button styling */
+#endAssessmentBtn {
+    margin-top: 20px;
+    background-color: #131842;
+    color: white;
+    width:50%;
+    font-size: 1.2rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left:30px;
+    margin-bottom:10px;
+}
+
+#endAssessmentBtn:hover {
+    background-color: #E68369; /* Darker shade on hover */
+}
+
+/* Score card styling */
+#scoreCard {
+    background-color: white;
+    border: 2px solid #E68369;
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#scoreCard h2 {
+    color: #E68369;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#correctAnswerScore, #wrongAnswerScore {
+    font-size: 1.2rem;
+    color: #131842;
+    margin-bottom: 10px;
+}

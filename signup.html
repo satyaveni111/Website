@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="signupcss.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-heading text-center" style="font-family: 'Poppins', sans-serif;">Welcome back! Please <span style = "font-size:40px">Login</span></h1>
+        <form id="myForm" class ="mt-5">
+          <div class="mb-3">
+            <div class = "d-flex flex-row justify-content-center mt-3">
+              <label for="name" class = "mr-3" style = "color:#E68369; font-family:Roboto;">Name :-</label>
+              <input type="text" class="form-control w-50" id="name" />
+            </div>
+            <p id="nameErrMsg" class="error-message text-center"></p>
+          </div>
+          <div class="mb-3 d-flex flex-row justify-content-center">
+            <label for="email" class = "mr-3" style = "color:#E68369; font-family:Roboto;">Email :-</label>
+            <input type="email" class="form-control w-50" id="email" />
+          </div> 
+          <p id="emailErrMsg" class="error-message text-center"></p>
+          <div class = "d-flex flex-row justify-content-center mt-5">
+            <button type="submit" class="button-color">start Quiz</button>
+          </div>
+        </form>
+      </div>
+<script src="/signupJs.js"></script>
+</body>
+</html>

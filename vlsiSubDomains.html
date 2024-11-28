@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dropdown.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+</head>
+<body class = "bgcolor">
+    <h1 style = "margin-bottom:50px; color:white; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight:300;" class = "mt-5">Select a <span style="color:#E68369;">subject</span></h1>
+    <div class="d-flex flex-column justify-content-start">
+        <select id="verilogDropDown" onchange="verilogSelectDifficulty()" class="mb-3 styled-select text-center">
+            <option value="" selected>VERILOG</option>
+            <option value="verilogEasy.html">Easy</option>
+            <option value="verilogMedium.html">Medium</option>
+            <option value="verilogHard.html">Hard</option>
+        </select>
+        <select id="svDropDown" onchange="svSelectDifficulty()" class="mb-3 styled-select text-center">
+            <option value="" selected>System Verilog</option>
+            <option value="svEasy.html">Easy</option>
+            <option value="svMedium.html">Medium</option>
+            <option value="svHard.html">Hard</option>
+        </select>
+        <select id="deDropDown" onchange="deSelectDifficulty()" class="mb-3 styled-select text-center">
+            <option value="" selected>Digital Electronics</option>
+            <option value="deEasy.html">Easy</option>
+            <option value="deMedium.html">Medium</option>
+            <option value="deHard.html">Hard</option>
+        </select>
+    </div>
+    <script src="signupJs.js"></script>
+</body>
+</html>
